@@ -1,0 +1,39 @@
+//* 1 //*
+void main() {
+  List<int> numbers = [5, 10, 15, 20, 25];
+  int count = 0;
+
+  for (int number in numbers) {
+    if (number % 2 == 0) {
+      count++;
+    }
+  }
+
+  print("Çift sayıların sayısı: $count");
+}
+
+//* 2 //*
+void main() {
+  Map<String, int> notlar = {'Ali': 4, 'Veli': 6, 'Ahmet': 8};
+  int toplam = 0;
+
+  notlar.forEach((key, value) {
+    toplam += value;
+  });
+
+  if (toplam > 10) {
+    print("Büyük");
+  } else {
+    print("Küçük");
+  }
+}
+//* 3 //*
+void main() {
+  Set<int> sayilar = {1, 2, 3, 10, 20};
+
+  if (sayilar.contains(10)) {
+    print("10 bulundu");
+  } else {
+    print("10 bulunamadı");
+  }
+}
